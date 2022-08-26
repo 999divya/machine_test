@@ -1,0 +1,31 @@
+{
+  "name": "machine_test_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/999divya/machine_test-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/999divya/machine_test-/issues"
+  },
+  "homepage": "https://github.com/999divya/machine_test-#readme",
+  "dependencies": {
+    "cloudinary": "^1.30.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "fast-csv": "^4.3.6",
+    "mongoose": "^6.5.3",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemon": "^2.0.19"
+  }
+}
