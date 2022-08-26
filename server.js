@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const connectDB = require("./config/dbConn");
 const errorHandler = require('./middleware/errorHandler');
+const cors = require('cors')
 const app = express();
 
 const PORT = process.env.PORT || 4000;
@@ -11,7 +12,7 @@ const PORT = process.env.PORT || 4000;
 //database connection
 connectDB();
 
-
+app.use(cors());
 app.use(express.json());
 
 app.use('/api/admin',require('./Routes/route'));
